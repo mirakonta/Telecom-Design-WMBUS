@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Demo_appapl.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Demo_appserial_collector.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Demo_appserial_meter.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Debug - Serial Collector N2</name>
+      <member>
+        <project>libstack</project>
+        <configuration>Debug_Collector_N2</configuration>
+      </member>
+      <member>
+        <project>appserial</project>
+        <configuration>Debug_Collector_N2</configuration>
+      </member>
+    </batchDefinition>
+    <batchDefinition>
+      <name>Debug - Serial Meter N2</name>
+      <member>
+        <project>Library</project>
+        <configuration>Debug_Meter_N2</configuration>
+      </member>
+      <member>
+        <project>appserial</project>
+        <configuration>Debug_Meter_N2</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
