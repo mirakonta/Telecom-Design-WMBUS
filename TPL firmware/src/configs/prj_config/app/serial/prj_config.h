@@ -21,6 +21,8 @@
   #include "SLWSTK6220A.h"
 #elif defined SLWSTK6200A
   #include "SLWSTK6200A.h"
+#elif defined TD1208
+  #include "TD1208.h"
 #else
   #error: Please create a board configuration or use an existing one (see above)
 #endif
