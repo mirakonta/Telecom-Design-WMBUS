@@ -16,6 +16,8 @@
 #define RF_GPIO1_PIN                      (14U)		//not sure
 #define RF_SDN_PORT                       gpioPortC 
 #define RF_SDN_PIN                        (13U) 
+#define TCXO_EN_PORT                      gpioPortF 
+#define TCXO_EN_PIN                       (2U) 
 
 /* MCU */
 #define MCU_SPEED                         (5U)        /* E_MCU_SPEED_28_MHZ */

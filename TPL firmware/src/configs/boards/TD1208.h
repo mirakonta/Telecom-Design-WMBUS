@@ -14,13 +14,15 @@
 #define RF_GPIO0_PIN                      (2U) 		//not sure
 #define RF_GPIO1_PORT                     gpioPortB	//not sure
 #define RF_GPIO1_PIN                      (14U)		//not sure
-#define RF_SDN_PORT                       gpioPortC 
-#define RF_SDN_PIN                        (13U) 
-                                         
-/* MCU */                                
+#define RF_SDN_PORT                       gpioPortC
+#define RF_SDN_PIN                        (13U)
+#define TCXO_EN_PORT                      gpioPortF
+#define TCXO_EN_PIN                       (2U)
+
+/* MCU */
 #define MCU_SPEED                            (4U) /* MCU_SPEED_21_MHZ */
-                                         
-/* SPI */                                
+
+/* SPI */
 #define SPI_MOSI_PORT                     gpioPortE
 #define SPI_MOSI_PIN                      (10U)
 #define SPI_MISO_PORT                     gpioPortE
@@ -37,15 +39,15 @@
 #define SPI_USART_TX_IEN                  USART0_TX_IRQn
 #define SPI_USART_RX_IEN                  USART0_RX_IRQn
 #define SPI_CLK_ENABLE()                  CMU_ClockEnable(cmuClock_USART0, true)
-#define SPI_CLK_DISABLE()                 CMU_ClockEnable(cmuClock_USART0, false)    
+#define SPI_CLK_DISABLE()                 CMU_ClockEnable(cmuClock_USART0, false)
 
-      
+
 /* UART */
 #define UART_USART_INTERFACE                 LEUART0
 #define UART_USART_PORT                      gpioPortD
 #define UART_USART_RX_PIN                    5
 #define UART_USART_TX_PIN                    4
-                                            
+
 
 /** Because the wmbus_typedefs.h collides with definitions by EFM32 library,
     wmbus_typedefs.h should prefer using stdint.h. */
